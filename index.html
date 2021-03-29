@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <button id = "find-me">Узнать своё место положения</button><br/> -->
+    <p id = "status"></p>
+    <a id = "map-link" target="_blank"></a>
+    <div class="center">
+        Ваше место положения <b id="region">Ташкент?</b> <br>
+        <button class="btn">Да</button> 
+        <button class="btn-no" onclick="info()">Нет</button>
+    </div>
+        <div class="search">
+            <h3 class="inp-title">Выберите регион</h3>
+        <input type="text" id="elastic" placeholder="Поиск...">
+        <ul class="elastic">
+            <li onclick="tosh()" id="toshkent">Toshkent</li>
+            <li onclick="vod()">Vodiy</li>
+            <li onclick="voh()">Voha</li>
+            <li onclick="and()">Andijon</li>
+            <li onclick="nam()">Namangan</li>
+            <li onclick="far()">Fargona</li>
+            <li onclick="sir()">Sirdaryo</li>
+            <li onclick="jiz()">Jizzah</li>
+            <li onclick="sam()">Samarqand</li>
+            <li onclick="buh()">Buhoro</li>
+            <li onclick="hor()">Horazm</li>
+            <li onclick="qash()">Qashqadaryo</li>
+            <li onclick="surh()">Surhondaryo</li>
+            <li onclick="nav()">Navoiy</li>
+            <li onclick="nuk()">Nukus</li>
+        </ul>
+    </div>
+    <div id="contents">
+        <div id="content"></div>
+        <button class="back" onclick="back()">
+            <img src="back.png" alt="" width="15px" class="">Назад
+        </button>
+    </div>
+    <script src="content.js"></script>
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+    
+</body>
+</html>
